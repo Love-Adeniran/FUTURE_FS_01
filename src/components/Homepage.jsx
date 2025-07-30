@@ -17,8 +17,8 @@ const Homepage = () => {
                 <div className='z-40'>
                     <Confetti count={80}  />
 
-                    <div className=' top-0 left-0 w-full flex z-20 '>
-                        <div className=" px-6 py-4 flex justify-between items-center md:flex-2/4 md:my-4 ">
+                    <div className=' flex px-4 z-20 w-screen'>
+                        <div className=" px-6 py-4 flex space-around items-center md:my-4 md:flex-row sm:flex-col ">
                             {/* <div className=' p-4 md:flex-2/4 md:my-4'> */}
                             {/* TEXT */}
                             <div className='text-xl justify-items-center rounded rounded-bl-4xl rounded-tr-4xl mx-auto origin-center rotate-10 bg-amber-100 md:py-6'>
@@ -58,21 +58,21 @@ const Homepage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='p-2 md:flex-2/4 py-3 flex justify-center mx-auto'>
+                        <div className='p-2 my-2 py-3 flex justify-center mx-auto'>
                             <img className='w-100 h-100 hover:animate-bounce ease-in m-2 border border-amber-950 rounded-full' src={myImg} alt="" />
                             {/* <img src={myAvt} className='hover:animate-ping ease-in-out' alt="" /> */}
                         </div>
                     </div>
                 </div>
-                    <div className='justify-center flex z-40 '>
+                    <div className='justify-center flex z-40'>
                         <div className='p-2 '>
                             {/* <Link to={}/> */}
-                        <button className='border rounded py-2 px-4 text-amber-900 font-bold text-2xl cursor-pointer'>Let's Go</button>
+                        <Link to='/projects' className='border rounded py-2 px-4 text-amber-900 font-bold text-2xl cursor-pointer'>Let's Go</Link>
                         </div>
                     </div>
             </section>
             
-            {/* <Projects/> */}
+            
         </>
     )
 }
