@@ -1,0 +1,17 @@
+.confetti {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        opacity: 0.8;
+        animation: fall linear infinite;
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(-10%);
+        }
+        100% {
+          transform: translateY(110vh);
+        }
+      }
